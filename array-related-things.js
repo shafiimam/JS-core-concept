@@ -36,3 +36,20 @@ console.log(remaining);
 
 const hasWatch = products.find(product => product.name = 'watch');
 console.log(hasWatch);
+
+// reduce
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+console.log('reduced:', numbers.reduce(reducer));
+console.log("reduced+5:", numbers.reduce(reducer, 5));
+// includes
+const include = products.includes({ id: 1, name: 'laptop', price: 500 });
+console.log(include);
+const include2 = friends.includes('rafiq', 0);
+console.log(include2);
+
+// indexOf
+console.log(numbers.indexOf(2));
+// splice
+const spliced = friends.splice(1, 0, 'kalam', 'balam');
+console.log(friends);
+//
